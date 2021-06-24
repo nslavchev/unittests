@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.gradle.spotless' version '4.5.1'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task copyBuildDir(type: Copy) {
+    from 'build'
+    into 'buildCopy'
+}
+
+build.finalizedBy(copyBuildDir)
+
+compileJava.dependsOn 'spotlessApply'
