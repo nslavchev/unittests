@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringsClassTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-24T12:27:08" hostname="DESKTOP-Q543O8E" time="0.001">
+<testsuite name="StringsClassTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-06-24T14:19:53" hostname="DESKTOP-Q543O8E" time="0.004">
   <properties/>
-  <testcase name="testHasAnagram" classname="StringsClassTests" time="0.001"/>
+  <testcase name="testCopyChars" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testHistogram" classname="StringsClassTests" time="0.001"/>
+  <testcase name="testIsNumberAPalindrome" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testIsAnagram" classname="StringsClassTests" time="0.001"/>
+  <testcase name="testReverseString" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testReverseWordsInString" classname="StringsClassTests" time="0.001"/>
+  <testcase name="testLongestPalindromeNumber" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testIsPalindrome" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testHasAnagram" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testFindMatches" classname="StringsClassTests" time="0.001"/>
+  <testcase name="testDecodeURL" classname="StringsClassTests" time="0.0"/>
+  <testcase name="testNumsSum" classname="StringsClassTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

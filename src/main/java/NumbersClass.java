@@ -84,14 +84,23 @@ public class NumbersClass {
         return findGCD(b, a%b);
     }
 
-    protected long doubleFactorial(int n){
-        long[] factorials = {1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800L,87178291200L,1307674368000L,20922789888000L,355687428096000L,6402373705728000L,121645100408832000L,2432902008176640000L};
-        long factorialOfN = factorials[n];
-        int index = (int)factorialOfN;
-        if(index <= 20){
-            return factorials[index];
-        }
-        throw new IllegalArgumentException("Number too large!");
+    private long factorial(long n){
+        if (n == 0)
+            return 1;
+        else
+            return(n * factorial(n-1));
+    }
+
+    protected long doubleFactorial(long n){
+//        long[] factorials = {1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800L,87178291200L,1307674368000L,20922789888000L,355687428096000L,6402373705728000L,121645100408832000L,2432902008176640000L};
+//        long factorialOfN = factorials[n];
+//        int index = (int)factorialOfN;
+//        if(index <= 20){
+//            return factorials[index];
+//        }
+//        throw new IllegalArgumentException("Number too large!");
+        long firsNum = factorial(n);
+        return factorial(firsNum);
     }
 
     protected long maximalScalarProduct(int[] vectorA, int[] vectorB){

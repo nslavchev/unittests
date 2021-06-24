@@ -120,4 +120,14 @@ public class StringsClass {
 
         return compare(countP, countTW);
     }
+
+    protected int[] histogram(int[][]image){
+        int[] res = new int[255];
+        for (int i = 0; i < image.length; i++) {
+            for (int j = 0; j < image[i].length; j++) {
+                res[image[i][j]] += 1;
+            }
+        }
+        return res;
+    }
 }
